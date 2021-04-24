@@ -20,7 +20,7 @@ class Print:
         else:
             raise StopIteration
 
-
+# basic iterator printing ods up to a limit
 class Printcount:
     def __init__(self, limit):
         self.limit = limit
