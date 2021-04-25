@@ -1,6 +1,6 @@
 # Exploring functionality specific to Python
 
-# iterators/generators
+# iterators/generators examples
 
 # basic iterator class with limit (help from G4G):
 class Print:
@@ -20,7 +20,7 @@ class Print:
         else:
             raise StopIteration
 
-# basic iterator printing ods up to a limit
+# basic iterator printing odds up to a limit
 class Printcount:
     def __init__(self, limit):
         self.limit = limit
@@ -38,10 +38,30 @@ class Printcount:
         else:
             raise StopIteration
 
-# decorators
+# decorators examples 
 
+def python_dec(func):
+    def wrapper(*args):
+        a = 'pi'
+        add_on = func(*args)
+        b = 'a pie'        
+        return f"{a}{add_on}{b}"
+    return wrapper
+
+@python_dec
+def printzees():
+    return 'zzzzzz'
+
+
+@python_dec
+def notzees(string):
+    return f" {string} "
+
+# Note the decorators in testing...I've been using these most of the course
 
 # dunders
+
+
 
 
 # "Anything that catches your eye"

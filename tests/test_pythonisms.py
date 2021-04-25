@@ -1,7 +1,7 @@
 from pythonisms import __version__
 import pytest
 from pythonisms.pythonisms import  Print, Printcount, generic_arguments
-
+from pythonisms.pythonisms import  printzees, notzees
 # passes -- proof of life with poetry new
 @pytest.mark.skip('Passed On Previous Run')
 def test_version():
@@ -25,11 +25,25 @@ def test_print_odds():
     expected = [1,3,5,7]
     assert result == expected
         
+# decorators
+
+# 2 passes decorators
+# @pytest.mark.skip('Passed On Previous Run')    
+def test_printzees():
+    actual = printzees()
+    expected = 'pizzzzzza pie'
+    assert actual == expected
+    
+# @pytest.mark.skip('Passed On Previous Run')    
+def test_print_pie():
+    actual = notzees('is not')
+    expected = 'pi is not a pie'
+    assert actual == expected
     
 
     
 # passes -- *args with different types and .join()
-# @pytest.mark.skip('Passed On Previous Run')
+@pytest.mark.skip('Passed On Previous Run')
 def test_args():
     a = 'Aliya'
     b = ['is', 'awesome']
