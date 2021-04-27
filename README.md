@@ -1,6 +1,6 @@
 # Pythonisms
 
-## PR for this file: https://github.com/kimmyd70/web-scraper/pull/1
+## PR for this file: https://github.com/kimmyd70/pythonisms/pull/1
 
 This is Lab 42 of 401-Python (seattle-py-401n2)
 
